@@ -26,7 +26,9 @@ Pickle module has two main functions: dump and load. The first one is dump, whic
 To understand the basics of picking and unpickling in more detail. Please navigate to the following links provided below as these links not only gives you basic understanding but also helps you to get familiar with other useful functions and exception handling presented in pickle module.
 
 •	https://www.tutorialspoint.com/python-pickling
+
 •	https://thepythonguru.com/pickling-objects-in-python/ 
+
 •	https://docs.python.org/3/library/pickle.html
 
 I am also sharing a link with you if you are interested from “software security perspective. 
@@ -69,13 +71,11 @@ save_data_to_file(strFileName, lstCustomer)
 print(read_data_from_file(strFileName))
 ```
 
+![Results of Figure1](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure1.png "Results of Figure 1")
 
+![Results of Figure2](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure2.png "Results of Figure 2")
 
-
-
-
-
-
+###### *Figure1 and 2 demonstrates the data saved into binary file using dump and loaded from file using load function*
 
 **Structured Error Handling:**
 
@@ -87,6 +87,7 @@ Raising an exception breaks current code execution and returns the exception bac
 
 For more details about structural handling, folks, you can try these links which helps you to learn how to do exception handling in more details. 
 •	https://realpython.com/python-exceptions/
+
 •	https://www.programiz.com/python-programming/exception-handling
 
 
