@@ -111,4 +111,9 @@ In the next step, I created a function read_data_from_file which opens the file,
 
 Within the main body, I catch the exceptions thrown from the individual functions and display a user friendly message. I used 3 except statements Exception, SaveException and ReadException and close the script.
 
+![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/AppDataBinary.png "AppData.dat file which is a binary file")
+![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure5.png "Running the script from PyCharm")
+![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure6.png "Running script from command prompt with error")
+![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure7.png "Running the script from PyCharm")
+
 
