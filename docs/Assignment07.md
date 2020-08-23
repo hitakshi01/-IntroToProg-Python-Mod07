@@ -91,5 +91,18 @@ For more details about structural handling, folks, you can try these links which
 •	https://www.programiz.com/python-programming/exception-handling
 
 
+### Assignment 7 - Creating a python script that demonstrates python’s pickling and exception error handling
+
+Since we did not have a starter file or any specific problem statement; for this assignment, I have re-used the code for lab 7-1 and added error handling using try-except. 
+
+I created 2 custom exception classes SaveException and ReadException and defined a new function __str__ which returns a print statement with a custom error message.
+
+In the main body of the script, the user inputs the “ID” and “name”. I assumed “ID” can only be numbers/ digits and “name” can only be alphabets. Hence, I used isdigit() and isalpha() respectively. I used an if statement to compare the input with the above functions and raise an exception.
+
+I added the “name” and “ID” into a list and used the function save_data_to_file to save the list into a binary file. Within the function, I opened the file using the open function and used dump function provided by pickle to store the data. I have put the code within try- except code to catch all the exceptions and throw a custom exception SaveException as defined above.
+
+In the next step, I created a function read_data_from_file which opens the file, and used the load function provided by pickle and return the data. Similar to save, I wrapped the code in try -except block to catch any exceptions and then raise a custom error – ReadException.
+
+Within the main body, I catch the exceptions thrown from the individual functions and display a user friendly message. I used 3 except statements Exception, SaveException and ReadException and close the script.
 
 
