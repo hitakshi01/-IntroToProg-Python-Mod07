@@ -97,9 +97,15 @@ Since we did not have a starter file or any specific problem statement; for this
 
 I created 2 custom exception classes SaveException and ReadException and defined a new function __str__ which returns a print statement with a custom error message.
 
+![Results of Figure3](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure3.png "Define custom exceptions to be used in individual functions")
+
 In the main body of the script, the user inputs the “ID” and “name”. I assumed “ID” can only be numbers/ digits and “name” can only be alphabets. Hence, I used isdigit() and isalpha() respectively. I used an if statement to compare the input with the above functions and raise an exception.
 
 I added the “name” and “ID” into a list and used the function save_data_to_file to save the list into a binary file. Within the function, I opened the file using the open function and used dump function provided by pickle to store the data. I have put the code within try- except code to catch all the exceptions and throw a custom exception SaveException as defined above.
+
+
+![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure4.png "Main body of the script")
+
 
 In the next step, I created a function read_data_from_file which opens the file, and used the load function provided by pickle and return the data. Similar to save, I wrapped the code in try -except block to catch any exceptions and then raise a custom error – ReadException.
 
