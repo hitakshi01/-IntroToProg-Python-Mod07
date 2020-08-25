@@ -6,7 +6,7 @@ Foundations of Programming: Python
 
 Assignment 07
 
-gitHubURL:
+https://github.com/hitakshi01/-IntroToProg-Python-Mod07/
                                                 
   ### Create a script using exception error handling and pickling
 
@@ -75,7 +75,7 @@ print(read_data_from_file(strFileName))
 
 ![Results of Figure2](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure2.png "Results of Figure 2")
 
-###### *Figure1 and 2 demonstrates the data saved into binary file using dump and loaded from file using load function*
+###### *Figure1 to 3 demonstrates the data saved into binary file using dump and loaded from file using load function*
 
 **Structured Error Handling:**
 
@@ -86,6 +86,7 @@ Raising an exception breaks current code execution and returns the exception bac
 "Exception" is a built-in python class used to hold information about an error. Python automatically creates an Exception object when an error occurs. The Exception object automatically fills with information about the error that caused the exception.
 
 For more details about structural handling, folks, you can try these links which helps you to learn how to do exception handling in more details. 
+
 •	https://realpython.com/python-exceptions/
 
 •	https://www.programiz.com/python-programming/exception-handling
@@ -99,21 +100,25 @@ I created 2 custom exception classes SaveException and ReadException and defined
 
 ![Results of Figure3](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure3.png "Define custom exceptions to be used in individual functions")
 
-In the main body of the script, the user inputs the “ID” and “name”. I assumed “ID” can only be numbers/ digits and “name” can only be alphabets. Hence, I used isdigit() and isalpha() respectively. I used an if statement to compare the input with the above functions and raise an exception.
+In the main body of the script, the user inputs the “ID” and “Name”. I assumed “ID” can only be numbers/ digits and “Name” can only be alphabets. Hence, I used isdigit() and isalpha() functions respectively. I used an if statement to compare the input with the above functions and raise an exception.
 
-I added the “name” and “ID” into a list and used the function save_data_to_file to save the list into a binary file. Within the function, I opened the file using the open function and used dump function provided by pickle to store the data. I have put the code within try- except code to catch all the exceptions and throw a custom exception SaveException as defined above.
+I added the “Name” and “ID” into a list and used the function save_data_to_file to save the list into a binary file. Within the function, I opened the file using the open() function and used dump() function provided by pickle to store the data. I have put the code within try- except code to catch all the exceptions and throw a custom exception SaveException as defined above.
 
 
 ![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure4.png "Main body of the script")
 
 
-In the next step, I created a function read_data_from_file which opens the file, and used the load function provided by pickle and return the data. Similar to save, I wrapped the code in try -except block to catch any exceptions and then raise a custom error – ReadException.
+In the next step, I created a function read_data_from_file which opens the file, and used the load() function provided by pickle module and return the data. Similar to save, I wrapped the code in try - except block to catch any exceptions and then raise a custom error – ReadException.
 
 Within the main body, I catch the exceptions thrown from the individual functions and display a user friendly message. I used 3 except statements Exception, SaveException and ReadException and close the script.
 
-![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/AppDataBinary.png "AppData.dat file which is a binary file")
-![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure5.png "Running the script from PyCharm")
-![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure6.png "Running script from command prompt with error")
-![Results of Figure4](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure7.png "Running the script from PyCharm")
+![Results of AppDataBinary](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/AppDataBinary.png "AppData.dat file which is a binary file")
+![Results of Figure5](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure5.png "Running the script from PyCharm")
+![Results of Figure6](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure6.png "Running script from command prompt with error")
+![Results of Figure7](https://github.com/hitakshi01/-IntroToProg-Python-Mod07/blob/master/docs/Figure7.png "Running the script from PyCharm")
+
+**Summary:**
+
+After knowing how to do professional scripting, here i have learnt how to handle errors that are not syntactic ones but exceptions that usually comes when the program runs. I have created scripts and performed lab work where I handled custom and python generated exceptions using exception class and custom exception class. I think it's important for a programmer to write each piece of code in try- except block for efficient scripting and error handling. I have also created a GitHub web page where i have posted all my assignment work, found this way quite easy and quick.
 
 
